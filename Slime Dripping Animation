@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>SallySlides Title Animation</title>
   <style>
-    /* Основной стиль страницы */
+    / Основной стиль страницы /
     body {
       display: flex;
       align-items: center;
@@ -15,7 +15,7 @@
       background-color: PapayaWhip;
     }
 
-    /* Заголовок с эффектом goo и каплями */
+    / Заголовок с эффектом goo и каплями /
     .title {
       font-weight: 900;
       font-size: 10vw;
@@ -27,7 +27,7 @@
       text-transform: uppercase;
     }
 
-    /* Стиль для анимированных капель */
+    / Стиль для анимированных капель /
     .drop {
       width: .1em;
       height: .1em;
@@ -38,7 +38,7 @@
       animation: drop 3s infinite both;
     }
 
-    /* Расположение и задержка для каждой капли */
+    / Расположение и задержка для каждой капли /
     .drop:nth-child(2) {
       left: 14%;
     }
@@ -63,7 +63,7 @@
       animation-delay: -1.3s;
     }
 
-    /* Анимация падения */
+    / Анимация падения /
     @keyframes drop {
       0% {
         transform: translateY(0) scaleX(.85) rotate(45deg);
@@ -80,7 +80,6 @@
   </style>
 </head>
 <body>
-  <!-- SVG фильтр "goo", создающий вязкое стекание -->
   <svg style="display: none;">
     <filter id="goo">
       <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
